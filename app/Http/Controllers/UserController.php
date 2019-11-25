@@ -60,7 +60,8 @@ class UserController extends Controller
             'location' => 'required|string',
             'place' => 'required',
             'date' => 'required|date',
-            'time' => 'required'
+            'time' => 'required',
+            'timezone' => 'required|string',
         ]);
         if ($validator->fails()) {
             return response()->json($validator->errors(), 412);

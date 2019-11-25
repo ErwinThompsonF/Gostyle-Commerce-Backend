@@ -20,6 +20,7 @@ class CreateMeetingTable extends Migration
             $table->string('place');
             $table->date('date');
             $table->time('time');
+            $table->string('timezone');
             $table->timestamps();
         });
     }
